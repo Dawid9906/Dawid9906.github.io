@@ -14,7 +14,7 @@ p {
 }
 
 html {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   position: relative;
@@ -70,4 +70,17 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+header {
+  display: flex;
+  min-height: 10%;
+  background-color: #a0c49d;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+  margin-right: 20px;
 }
