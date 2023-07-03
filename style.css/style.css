@@ -118,6 +118,7 @@ header ul li {
   justify-content: space-between;
   width: 50px;
   height: 30px;
+  cursor: pointer;
 }
 .responsywna_lista .bar {
   height: 3px;

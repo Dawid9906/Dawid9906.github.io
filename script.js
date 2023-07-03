@@ -4,3 +4,6 @@ const links = document.getElementsByClassName("links")[0];
 toggleBTN.addEventListener("click", () => {
   links.classList.toggle("active");
 });
+links.addEventListener("click", () => {
+  links.classList.remove("active");
+});
