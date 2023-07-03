@@ -204,13 +204,20 @@ iframe {
   font-size: 5rem;
   text-align: center;
   color: #f7ffe5;
+  width: 20%;
 }
-#czwarta_sekcja p {
-  display: block;
+#czwarta_sekcja #tekst2 {
+  display: flex;
   font-size: 1rem;
   text-align: center;
   color: #f7ffe5;
   font-size: 1.5rem;
+  width: 70%;
+  border-left: 3px solid #f7ffe5;
+  justify-content: space-around;
+}
+#czwarta_sekcja p {
+  color: #f7ffe5;
 }
 @media only screen and (max-width: 1200px) {
   #o_nas {
