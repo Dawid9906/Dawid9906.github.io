@@ -194,6 +194,7 @@ iframe {
   font-size: 1rem;
   text-align: center;
   color: #f7ffe5;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 1200px) {
   #o_nas {
