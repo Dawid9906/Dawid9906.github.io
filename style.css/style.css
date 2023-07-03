@@ -109,7 +109,22 @@ header ul li {
   font-size: 1.8rem;
   margin: 0 40px;
 }
-
+.responsywna_lista {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 30px;
+}
+.responsywna_lista .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
 #pierwsza_sekcja {
   height: auto;
 }
@@ -246,9 +261,6 @@ iframe {
 @media only screen and (max-width: 900px) {
   html {
     font-size: 14px;
-  }
-  #gorne_menu {
-    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
