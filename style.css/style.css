@@ -210,14 +210,14 @@ iframe {
   display: flex;
   font-size: 1rem;
   text-align: center;
-  color: #f7ffe5;
+  color: #a0c49d;
   font-size: 1.5rem;
   width: 70%;
-  border-left: 3px solid #f7ffe5;
+  border-left: 3px solid #a0c49d;
   justify-content: space-around;
 }
 #czwarta_sekcja p {
-  color: #f7ffe5;
+  color: #a0c49d;
 }
 @media only screen and (max-width: 1200px) {
   #o_nas {
@@ -264,6 +264,15 @@ iframe {
   }
   .active {
     display: block;
+  }
+  #czwarta_sekcja {
+    flex-wrap: wrap;
+  }
+  #czwarta_sekcja h2 {
+    width: 100%;
+  }
+  #czwarta_sekcja #tekst2 {
+    border-left: none;
   }
 }
 @media only screen and (max-width: 900px) {
