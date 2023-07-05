@@ -78,11 +78,11 @@ header {
   top: 0;
   display: flex;
   height: auto;
-  background-color: #246ebf;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #232323;
-  padding: 20px 0;
+  box-shadow: 2px 2px 5x black;
+  padding: 10px 0;
 }
 
 header ul {
@@ -131,7 +131,7 @@ header ul li {
 .responsywna_lista .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: #121212;
   border-radius: 10px;
 }
 #pierwsza_sekcja {
@@ -292,6 +292,18 @@ iframe {
   html {
     font-size: 14px;
   }
+  #pierwsza_sekcja h2,
+  #druga_sekcja h2,
+  #trzecia_sekcja h2,
+  #czwarta_sekcja h2 {
+    font-size: 4rem;
+  }
+  #trzecia_sekcja p {
+    width: 100%;
+  }
+  iframe {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 600px) {
   html {
@@ -304,5 +316,8 @@ iframe {
   }
   #logo h1 {
     display: none;
+  }
+  iframe {
+    height: 300px;
   }
 }
