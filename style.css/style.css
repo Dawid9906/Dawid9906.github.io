@@ -211,6 +211,7 @@ iframe {
 #czwarta_sekcja {
   background-color: #121212;
   display: flex;
+  padding: 20px 0;
 }
 #czwarta_sekcja h2 {
   display: block;
@@ -221,17 +222,24 @@ iframe {
 }
 #czwarta_sekcja #tekst2 {
   display: flex;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   color: #fffaf0;
-  font-size: 1.5rem;
   width: 70%;
 
   justify-content: space-around;
 }
 #czwarta_sekcja p {
   color: #fffaf0;
+  font-size: 1.5rem;
 }
+#czwarta_sekcja a {
+  color: #fffaf0;
+}
+#czwarta_sekcja a:hover {
+  color: #37caec;
+}
+
 @media only screen and (max-width: 1200px) {
   #o_nas {
     flex-wrap: wrap;
