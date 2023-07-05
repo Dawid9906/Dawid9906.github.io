@@ -78,11 +78,12 @@ header {
   top: 0;
   display: flex;
   height: auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   justify-content: space-between;
   align-items: center;
   box-shadow: 2px 2px 5x black;
   padding: 10px 0;
+  width: 100%;
 }
 
 header ul {
@@ -154,13 +155,8 @@ h1 {
   font-size: 6rem;
   color: white;
 }
-#o_nas {
-  display: flex;
-  align-items: center;
-  padding: 30px 0;
-  background-color: #1f60a7;
-}
-#o_nas h2 {
+
+#baner h2 {
   display: inline-block;
   width: 30%;
   font-size: 5rem;
@@ -241,16 +237,16 @@ iframe {
 }
 
 @media only screen and (max-width: 1200px) {
-  #o_nas {
+  #baner {
     flex-wrap: wrap;
   }
   #tekst {
     border-left: 0px;
-    width: 80%;
+    width: 90%;
   }
-  #o_nas h2 {
+  #baner h2 {
     display: inline-block;
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
