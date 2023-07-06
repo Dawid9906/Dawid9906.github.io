@@ -93,7 +93,10 @@ header ul li {
   list-style: none;
   margin-right: 20px;
 }
-
+#gradient {
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
 #logo {
   display: flex;
   align-items: center;
@@ -140,37 +143,51 @@ header ul li {
   background-color: white;
 }
 #baner {
-  height: 500px;
-  background-image: url("/zdjecia/tło.jpg");
+  height: 700px;
+  background-image: url("/zdjecia/tło2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
+  text-align: center;
 }
 
 h1 {
   font-size: 6rem;
   color: white;
+  display: block;
+  width: 100%;
+  text-shadow: 3px 0px 7px rgba(4, 4, 4, 0.8), -3px 0px 7px rgba(8, 8, 8, 0.8),
+    0px 4px 7px rgba(7, 7, 7, 0.8);
+  padding-top: 30px;
 }
 
-#baner h2 {
-  display: inline-block;
-  width: 30%;
-  font-size: 5rem;
-  text-align: center;
-}
 #tekst {
   display: inline-block;
-  width: 70%;
+  width: 100%;
   padding-left: 40px;
   border-left: 3px solid #232323;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-right: 20px;
 }
-#druga_sekcja {
-  background-color: #1b528f;
+.baner_tekst {
+  display: inline-block;
+  font-size: 4rem;
+  text-shadow: 3px 0px 7px rgba(6, 6, 6, 0.8), -3px 0px 7px rgba(6, 6, 6, 0.8),
+    0px 4px 7px rgba(4, 4, 4, 0.8);
+  margin: 30px;
+}
+#o-nas h2 {
+  margin-top: 0px;
+  padding-top: 40px;
 }
 #druga_sekcja h2 {
   font-size: 5rem;
@@ -178,6 +195,10 @@ h1 {
   width: 100%;
   text-align: center;
   margin-top: 100px;
+  color: #121212;
+}
+#druga_sekcja {
+  color: #121212;
 }
 #druga_sekcja p {
   font-size: 1.5rem;
@@ -187,7 +208,6 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 30px;
-  background-color: #0e2948;
 }
 #trzecia_sekcja h2 {
   display: block;
@@ -243,6 +263,7 @@ iframe {
   #tekst {
     border-left: 0px;
     width: 90%;
+    margin-right: 0;
   }
   #baner h2 {
     display: inline-block;
@@ -287,9 +308,14 @@ iframe {
   }
   #czwarta_sekcja h2 {
     width: 100%;
+    margin-bottom: 20px;
   }
   #czwarta_sekcja #tekst2 {
     border-left: none;
+    width: 100%;
+  }
+  #czwarta_sekcja p {
+    font-size: 1.3rem;
   }
 }
 @media only screen and (max-width: 900px) {
