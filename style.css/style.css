@@ -26,7 +26,7 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
-  background-color: #1f60a7;
+  background-color: white;
 }
 
 h1,
@@ -81,7 +81,7 @@ header {
   background-color: rgb(255, 255, 255);
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 5x black;
+  border-bottom: 2px solid black;
   padding: 10px 0;
   width: 100%;
 }
@@ -93,10 +93,7 @@ header ul li {
   list-style: none;
   margin-right: 20px;
 }
-#gradient {
-  background-color: #63a4ff;
-  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
-}
+
 #logo {
   display: flex;
   align-items: center;
@@ -188,20 +185,28 @@ h1 {
 #o-nas h2 {
   margin-top: 0px;
   padding-top: 40px;
+  color: black;
 }
 #druga_sekcja h2 {
   font-size: 5rem;
-  display: inline-block;
+  display: block;
   width: 100%;
   text-align: center;
   margin-top: 100px;
   color: #121212;
+  margin-bottom: 30px;
 }
 #druga_sekcja {
   color: #121212;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #druga_sekcja p {
   font-size: 1.5rem;
+  width: 90%;
+  text-align: justify;
 }
 #trzecia_sekcja {
   display: flex;
@@ -214,10 +219,12 @@ h1 {
   font-size: 5rem;
   text-align: center;
   margin: 50px 0;
+  color: black;
 }
 #trzecia_sekcja p {
   width: 80%;
   margin: 0 auto;
+  box-shadow: 0px 0px 5px black;
 }
 iframe {
   width: 100%;
@@ -242,8 +249,8 @@ iframe {
   text-align: center;
   color: #fffaf0;
   width: 70%;
-
   justify-content: space-around;
+  padding-bottom: 30px;
 }
 #czwarta_sekcja p {
   color: #fffaf0;
@@ -255,7 +262,19 @@ iframe {
 #czwarta_sekcja a:hover {
   color: #37caec;
 }
-
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: white;
+}
 @media only screen and (max-width: 1200px) {
   #baner {
     flex-wrap: wrap;
