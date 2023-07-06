@@ -265,6 +265,11 @@ iframe {
     width: 90%;
     margin-right: 0;
   }
+  .baner_tekst,
+  #tekst {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   #baner h2 {
     display: inline-block;
     width: 100%;
@@ -322,11 +327,16 @@ iframe {
   html {
     font-size: 14px;
   }
+
+  #pierwsza_sekcja h1,
   #pierwsza_sekcja h2,
   #druga_sekcja h2,
   #trzecia_sekcja h2,
   #czwarta_sekcja h2 {
     font-size: 4rem;
+  }
+  .baner_tekst {
+    font-size: 3rem;
   }
   #trzecia_sekcja p {
     width: 100%;
