@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #fffaf0;
+  color: dark;
   position: relative;
 }
 
@@ -26,23 +26,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-weight: 600;
-  margin-bottom: 0px;
-  color: #fffaf0;
 }
 
 a {
@@ -80,7 +63,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid black;
-  padding: 10px 0;
+
   width: 100%;
 }
 
@@ -172,6 +155,7 @@ h1 {
   flex-wrap: wrap;
   padding: 20px;
   margin-right: 20px;
+  color: white;
 }
 .baner_tekst {
   display: inline-block;
@@ -180,13 +164,20 @@ h1 {
     0px 4px 7px rgba(4, 4, 4, 0.8);
   margin: 30px;
 }
-#o-nas h2 {
-  margin-top: 0px;
-  padding-top: 40px;
-  color: black;
-  font-size: 4rem;
+
+.sekcja {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#druga_sekcja h2 {
+
+.paragraf {
+  font-size: 1.5rem;
+  width: 90%;
+  text-align: justify;
+}
+.h2 {
   font-size: 4rem;
   display: block;
   width: 100%;
@@ -195,36 +186,7 @@ h1 {
   color: #121212;
   margin-bottom: 30px;
 }
-#druga_sekcja {
-  color: #121212;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#druga_sekcja p {
-  font-size: 1.5rem;
-  width: 90%;
-  text-align: justify;
-}
-#trzecia_sekcja {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-}
-#trzecia_sekcja h2 {
-  display: block;
-  font-size: 4rem;
-  text-align: center;
-  margin: 50px 0;
-  color: black;
-}
-#trzecia_sekcja p {
-  width: 80%;
-  margin: 0 auto;
-  box-shadow: 0px 0px 5px black;
-}
+
 iframe {
   width: 100%;
   height: 500px;
@@ -368,8 +330,8 @@ footer a {
     font-size: 12px;
   }
   #logo img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
   }
   #logo h1 {
