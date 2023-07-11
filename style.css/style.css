@@ -371,4 +371,7 @@ footer a {
   iframe {
     height: 300px;
   }
+  #gorne_menu .responsywna_lista {
+    top: 30px;
+  }
 }
