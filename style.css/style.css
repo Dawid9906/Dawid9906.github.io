@@ -238,6 +238,7 @@ iframe {
   width: 70%;
   justify-content: space-around;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 }
 #czwarta_sekcja p {
   color: #fffaf0;
@@ -248,6 +249,9 @@ iframe {
 }
 #czwarta_sekcja a:hover {
   color: #37caec;
+}
+.dane {
+  margin-top: 30px;
 }
 footer {
   position: absolute;
@@ -260,6 +264,39 @@ footer p {
   margin: 0;
 }
 footer a {
+  color: white;
+}
+.container {
+  margin: auto;
+}
+.subcontainer {
+  width: 90%;
+  margin: auto;
+}
+#cookies {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: #000000b1;
+  z-index: 1;
+  display: none;
+}
+
+.cookies {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#cookies-btn {
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #000;
   color: white;
 }
 @media only screen and (max-width: 1200px) {
@@ -326,7 +363,7 @@ footer a {
     width: 100%;
   }
   #czwarta_sekcja p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -354,6 +391,9 @@ footer a {
   }
   iframe {
     height: 400px;
+  }
+  .cookies {
+    padding: 10px 0;
   }
 }
 @media only screen and (max-width: 600px) {
