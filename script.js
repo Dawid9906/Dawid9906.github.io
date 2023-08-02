@@ -37,4 +37,38 @@ cookieMessage = () => {
     document.querySelector("#cookies").style.display = "block";
 };
 
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".photo");
+const contents = document.querySelectorAll(".content");
+let sliderNav = function (manual) {
+  btns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  slides.forEach((slide) => {
+    slide.classList.add("none");
+  });
+  contents.forEach((content) => {
+    content.classList.add("none");
+  });
+
+  btns[manual].classList.add("active");
+  slides[manual].classList.remove("none");
+  contents[manual].classList.remove("none");
+};
+
+btns.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    sliderNav(i);
+  });
+});
 window.addEventListener("load", cookieMessage);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
