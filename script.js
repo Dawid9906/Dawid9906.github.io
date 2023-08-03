@@ -36,7 +36,7 @@ cookieMessage = () => {
   if (!getCookie("cookie"))
     document.querySelector("#cookies").style.display = "block";
 };
-
+let e = [];
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".photo");
 const contents = document.querySelectorAll(".content");
@@ -54,13 +54,17 @@ let sliderNav = function (manual) {
   btns[manual].classList.add("active");
   slides[manual].classList.remove("none");
   contents[manual].classList.remove("none");
+  e.push(manual);
 };
 
 btns.forEach((btn, i) => {
   btn.addEventListener("click", () => {
     sliderNav(i);
+    console.log(e[e.length - 1]);
   });
 });
+let n = e[e.length - 1];
+
 window.addEventListener("load", cookieMessage);
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -72,3 +76,35 @@ const observer = new IntersectionObserver((entries) => {
 });
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+const repeat = function (activeClass) {
+  let active = document.getElementsByClassName("active");
+  let i = 1;
+  let repeater = () => {
+    setTimeout(function () {
+      [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove("active");
+      });
+      slides.forEach((slide) => {
+        slide.classList.add("none");
+      });
+      contents.forEach((content) => {
+        content.classList.add("none");
+      });
+
+      btns[i].classList.add("active");
+      slides[i].classList.remove("none");
+      contents[i].classList.remove("none");
+      i++;
+      if (slides.length === i) {
+        i = 0;
+      }
+      if (i >= slides.length) {
+        return;
+      }
+      repeater();
+    }, 5000);
+  };
+  repeater();
+};
+repeat();
