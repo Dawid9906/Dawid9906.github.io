@@ -55,8 +55,8 @@ li {
 }
 
 header {
-  z-index: 3;
-  position: sticky;
+  z-index: 6;
+  position: fixed;
   top: 0;
   display: flex;
   height: auto;
@@ -220,7 +220,7 @@ h1 {
   left: 0;
 }
 .slider-navigation {
-  z-index: 888;
+  z-index: 5;
   position: relative;
   display: flex;
   justify-content: center;
@@ -406,7 +406,7 @@ footer a {
   bottom: 0;
   color: white;
   background-color: #000000b1;
-  z-index: 5;
+  z-index: 6;
   display: none;
 }
 
