@@ -191,6 +191,7 @@ h1 {
   font-size: 1.5rem;
   color: white;
   font-weight: 600;
+  text-shadow: 0 0 2px black;
 }
 .home .content a {
   background-color: antiquewhite;
@@ -254,15 +255,52 @@ h1 {
 section {
   overflow: hidden;
 }
-
+.p-y {
+  padding-top: 100px;
+}
 section.home:hover .photo {
   transform: scale(1.2);
+}
+#form_div {
+  width: 600px;
+  align-items: center;
+  text-align: center;
+}
+form {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 90%;
+  border-radius: 10px;
+}
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+form button {
+  padding: 10px;
+  background: white;
+  font-size: 18px;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  border: none;
 }
 .photo.none {
   display: none;
 }
 .content.none {
   display: none;
+}
+h3 {
+  font-size: 1.5rem;
 }
 #tekst {
   display: inline-block;
@@ -364,7 +402,7 @@ iframe {
 }
 #czwarta_sekcja p {
   color: #fffaf0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #czwarta_sekcja a {
   color: #fffaf0;
